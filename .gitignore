@@ -1,0 +1,123 @@
+# -----------------------------------------------------------------------------
+# Whisper Local — somente código, documentação e arquivos-modelo entram no Git.
+# -----------------------------------------------------------------------------
+
+# Ambientes Python, caches e ferramentas
+.venv/
+.venv-*/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Build, empacotamento e releases locais
+build/
+dist/
+releases/
+*.spec
+*.manifest
+*.exe
+*.dll
+*.pyd
+*.msi
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+
+# Modelos, pesos e caches de IA
+modelos/
+models/
+.cache/
+.huggingface/
+*.bin
+*.onnx
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.gguf
+*.model
+
+# Mídias e transcrições — conteúdo potencialmente sensível
+/input/
+/output/
+*.aac
+*.aiff
+*.avi
+*.flac
+*.m4a
+*.mkv
+*.mov
+*.mp3
+*.mp4
+*.mpeg
+*.mpg
+*.ogg
+*.opus
+*.srt
+*.vtt
+*.wav
+*.webm
+*.wma
+
+# Segredos, credenciais e configurações locais
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+credentials*.json
+service-account*.json
+service_account*.json
+secrets*.json
+config.local.*
+*.local.ini
+*.local.json
+*.local.toml
+*.local.yaml
+*.local.yml
+
+# Logs, temporários e backups
+*.log
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.swp
+*.swo
+~$*
+tmp/
+temp/
+
+# Editores e sistema operacional
+.idea/
+.vscode/
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Preserve apenas os marcadores vazios do modelo de distribuição
+WHISPER_LOCAL_DISTRIBUICAO/input/*
+!WHISPER_LOCAL_DISTRIBUICAO/input/.gitkeep
+WHISPER_LOCAL_DISTRIBUICAO/output/*
+!WHISPER_LOCAL_DISTRIBUICAO/output/.gitkeep

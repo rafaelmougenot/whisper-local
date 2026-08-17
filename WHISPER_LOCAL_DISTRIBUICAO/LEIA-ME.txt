@@ -1,0 +1,24 @@
+WHISPER LOCAL - COMO USAR
+=========================
+
+1. Coloque os áudios ou vídeos dentro da pasta input.
+2. Dê dois cliques em "Iniciar Whisper.bat".
+3. Encontre os arquivos TXT e SRT na pasta output.
+
+Você também pode arrastar um ou mais arquivos sobre "Iniciar Whisper.bat".
+
+Não é necessário instalar Python. O processamento da mídia acontece neste
+computador. Na primeira execução, é necessário ter internet para baixar o modelo
+small. O modelo ficará na pasta modelos e será reutilizado nas próximas vezes.
+
+Se já houver arquivos de saída com o mesmo nome, o programa preservará os
+anteriores e acrescentará _2, _3 e assim por diante ao novo resultado.
+
+Requisitos: Windows 10 ou 11 de 64 bits e espaço livre para o modelo.
+
+IMPORTANTE PARA QUEM PREPARA A ENTREGA
+--------------------------------------
+
+Esta pasta no código-fonte é apenas o modelo da entrega. O arquivo executável e
+suas dependências são produzidos por build.ps1 na pasta releases. Não distribua
+áudios, transcrições, ambientes virtuais ou a pasta modelos junto do pacote-base.
